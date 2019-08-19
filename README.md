@@ -59,7 +59,8 @@ Para listar todos os itens acessamos via metodo GET o endereço abaixo:
 http://localhost:5000/api/list/all
 ```
 
-Será retornado os valores existentes
+Resultado:
+
 ```json
 [
   {
@@ -94,7 +95,7 @@ Via metódo GET, passaremos o corpo do objeto json a ser inserido
 }
 ```
 Resultado:
-```sh
+```json
 {
   "name": "Loja 1",
   "_id": {
@@ -120,7 +121,7 @@ http://localhost:5000/api/list/<id>
 ```
 Resultado:
 
-```sh
+```json
 {
   "name": "Loja 1",
   "_id": {
@@ -139,7 +140,53 @@ Exemplo:
 
 ### Atualizar
 
+Para atualizar um item acessamos o endereço abaixo:
+
+Via metódo PUT, passaremos o _id via URL
+```sh
+http://localhost:5000/api/update/store/<id>
+```
+
+Via metódo PUT, passaremos o corpo do objeto json a ser atualizado
+```json
+{
+	"code":"1",
+	"name":"Loja Atualizada",
+	"city": "Fortaleza",
+	"state": "CE"
+}
+```
+
+Resultado:
+
+```json
+{
+  "city": "Fortaleza",
+  "code": 1,
+  "name": "Loja Atualizada",
+  "state": "CE"
+}
+```
+
+Exemplo:
+
+![](./images/update-item.png)
+
 
 ### Deletar
 
+Para deletar um item acessamos o endereço abaixo:
 
+Via metódo DELETE, passaremos o _id via URL
+```sh
+http://localhost:5000/api/update/store/<id>
+```
+Resultado:
+
+```json
+
+``` 
+
+Exemplo:
+
+![](./images/delete-item.png)
