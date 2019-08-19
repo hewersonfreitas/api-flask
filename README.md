@@ -194,7 +194,7 @@ Exemplo:
 ![](./images/delete-item.png)
 
 
-# Verificado Tempo de Digitação
+# Verificando Tempo de Digitação
 
 Para executar o script Python para verificar a velocidade de digitação executamos o comando abaixo na raiz do projeto clonado.
 
