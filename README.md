@@ -28,6 +28,7 @@ http://localhost:5000
 ## CRUD
 
 ###Create
+
 Para criar uma entrada no banco iremos utilizar o path abaixo em algum aplicativo como Postman ou Insomnia
 
 ```sh
@@ -43,6 +44,8 @@ Via metódo POST, passaremos o corpo do objeto json a ser inserido
 	"state": "CE"
 }
 ```
+
+Exemplo:
 
 ![](./images/add-store.png)
 
