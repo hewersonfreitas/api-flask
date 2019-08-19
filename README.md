@@ -27,7 +27,7 @@ http://localhost:5000
 
 ## CRUD
 
-###Create
+### Create
 
 Para criar uma entrada no banco iremos utilizar o path abaixo em algum aplicativo como Postman ou Insomnia
 
@@ -48,6 +48,37 @@ Via metódo POST, passaremos o corpo do objeto json a ser inserido
 Exemplo:
 
 ![](./images/add-store.png)
+
+### Listar Items
+
+1. Listar todos
+   Para listar todos os itens acessamos via metodo GET o endereço abaixo:
+
+```sh
+http://localhost:5000/api/list/all
+```
+
+Será retornado os valores existentes
+```json
+[
+  {
+    "name": "Loja 1",
+    "_id": {
+      "$oid": "5d595929a5b5a9067e8e5a50"
+    },
+    "state": "CE",
+    "city": "Fortaleza",
+    "code": 1
+  }
+]
+```
+
+Exemplo:
+![]('./images/list-all.png)
+
+2. Listar por filtro de localidade
+
+3. Listar por _id
 
 
 
