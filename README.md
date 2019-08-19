@@ -51,8 +51,9 @@ Exemplo:
 
 ### Listar Items
 
-*1. Listar todos*
-   Para listar todos os itens acessamos via metodo GET o endereço abaixo:
+**1. Listar todos**
+
+Para listar todos os itens acessamos via metodo GET o endereço abaixo:
 
 ```sh
 http://localhost:5000/api/list/all
@@ -77,8 +78,9 @@ Exemplo:
 
 ![](./images/list-all.png)
 
-*2. Listar por filtro de localidade*
-  Para listar todos os itens utilizando filtro acessamos o endereço abaixo:
+**2. Listar por filtro de localidade**
+
+Para listar todos os itens utilizando filtro acessamos o endereço abaixo:
 
 ```sh
 http://localhost:5000/api/find/store
@@ -108,7 +110,7 @@ Exemplo:
 
 ![](./images/find-by-filter.png)
 
-*3. Listar por _id*
+**3. Listar por _id**
 
 Para listar um item por _id acessamos o endereço abaixo:
 
