@@ -27,14 +27,14 @@ http://localhost:5000
 
 ## CRUD
 
-###1. Create
+###Create
 Para criar uma entrada no banco iremos utilizar o path abaixo em algum aplicativo como Postman ou Insomnia
 
 ```sh
 http://localhost:5000/api/add/store
 ```
 
-Via metódo POST, passaremos o corpo do ojeto json a ser inserido
+Via metódo POST, passaremos o corpo do objeto json a ser inserido
 ```json
 {
 	"code":"1",
@@ -43,6 +43,8 @@ Via metódo POST, passaremos o corpo do ojeto json a ser inserido
 	"state": "CE"
 }
 ```
+
+![](./images/add-store.png)
 
 
 
