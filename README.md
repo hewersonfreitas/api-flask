@@ -138,7 +138,7 @@ Exemplo:
 ![](./images/find-by-id.png)
 
 
-### Atualizar
+### Atualizar Item
 
 Para atualizar um item acessamos o endereço abaixo:
 
@@ -173,18 +173,20 @@ Exemplo:
 ![](./images/update-item.png)
 
 
-### Deletar
+### Deletar Items
 
 Para deletar um item acessamos o endereço abaixo:
 
 Via metódo DELETE, passaremos o _id via URL
 ```sh
-http://localhost:5000/api/update/store/<id>
+http://localhost:5000/api/delete/store/<id>
 ```
 Resultado:
 
 ```json
-
+{
+  "message": "successful delete item _id:5d595929a5b5a9067e8e5a50"
+}
 ``` 
 
 Exemplo:
