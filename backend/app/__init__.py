@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from pymongo import MongoClient
 from bson.json_util import dumps
 from bson.objectid import ObjectId
@@ -112,3 +113,6 @@ def delete_one(id):
             }
         )
     return jsonify({"message": "successful delete item _id:{}".format(id)})
+
+
+CORS(app)
