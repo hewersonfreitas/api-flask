@@ -1,3 +1,5 @@
+import sys
+
 try:
     qty = int(input('Quantidade total de testes? '))
 except ValueError:
@@ -9,4 +11,5 @@ for idx, value in enumerate(qty):
     if(len(word) < 9 or len(word) > 1000):
         print("""A palavra deve conter entre 9 a 1000 caracteres
               , você digitou uma palavra com {0} caracteres""".format(len(word)))
+        sys.exit(1)
     print(idx)

@@ -51,7 +51,7 @@ Exemplo:
 
 ### Listar Items
 
-1. Listar todos
+*1. Listar todos*
    Para listar todos os itens acessamos via metodo GET o endereço abaixo:
 
 ```sh
@@ -74,9 +74,10 @@ Será retornado os valores existentes
 ```
 
 Exemplo:
+
 ![](./images/list-all.png)
 
-2. Listar por filtro de localidade
+*2. Listar por filtro de localidade*
   Para listar todos os itens utilizando filtro acessamos o endereço abaixo:
 
 ```sh
@@ -104,9 +105,10 @@ Resultado:
 ```
 
 Exemplo:
+
 ![](./images/find-by-filter.png)
 
-3. Listar por _id
+*3. Listar por _id*
 
 Para listar um item por _id acessamos o endereço abaixo:
 
@@ -129,8 +131,13 @@ Resultado:
 ```
 
 Exemplo:
+
 ![](./images/find-by-id.png)
 
 
+### Atualizar
+
+
+### Deletar
 
 
