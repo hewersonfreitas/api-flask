@@ -27,7 +27,7 @@ http://localhost:5000
 
 ## CRUD
 
-### Create
+### Inserir Items
 
 Para criar uma entrada no banco iremos utilizar o path abaixo em algum aplicativo como Postman ou Insomnia
 
@@ -74,11 +74,63 @@ Será retornado os valores existentes
 ```
 
 Exemplo:
-![]('./images/list-all.png)
+![](./images/list-all.png)
 
 2. Listar por filtro de localidade
+  Para listar todos os itens utilizando filtro acessamos o endereço abaixo:
+
+```sh
+http://localhost:5000/api/find/store
+```
+
+Via metódo GET, passaremos o corpo do objeto json a ser inserido
+```json
+{
+	"city": "Fortaleza",
+	"state": "CE"
+}
+```
+Resultado:
+```sh
+{
+  "name": "Loja 1",
+  "_id": {
+    "$oid": "5d595929a5b5a9067e8e5a50"
+  },
+  "state": "CE",
+  "city": "Fortaleza",
+  "code": 1
+}
+```
+
+Exemplo:
+![](./images/find-by-filter.png)
 
 3. Listar por _id
+
+Para listar um item por _id acessamos o endereço abaixo:
+
+Via metódo GET, passaremos o _id via URL
+```sh
+http://localhost:5000/api/list/<id>
+```
+Resultado:
+
+```sh
+{
+  "name": "Loja 1",
+  "_id": {
+    "$oid": "5d595929a5b5a9067e8e5a50"
+  },
+  "state": "CE",
+  "city": "Fortaleza",
+  "code": 1
+}
+```
+
+Exemplo:
+![](./images/find-by-id.png)
+
 
 
 
