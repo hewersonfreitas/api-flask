@@ -1,4 +1,4 @@
-# API Flask, React, Mongo DB
+# API Flask Mongo DB
 
 CRUD utilizando Flask para API Backend, e algumas de suas ferramentas
 
@@ -192,16 +192,3 @@ Resultado:
 Exemplo:
 
 ![](./images/delete-item.png)
-
-
-# Verificando Tempo de Digitação
-
-Para executar o script Python para verificar a velocidade de digitação executamos o comando abaixo na raiz do projeto clonado.
-
-```sh
-python time-press-keyboard.py
-
-OR
-
-python3 time-press-keyboard.py
-```
